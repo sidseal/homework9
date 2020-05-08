@@ -10,7 +10,7 @@ function init() {
         {
             message: "What is your Github username?",
             name: "username",
-            type: "input",
+            type:"input",
         },
         {
             message: "What is your project's name?",
@@ -34,14 +34,16 @@ function init() {
             ]
         },
         {
-            message: "What command should be run to install dependencies?",
+            message:"What command should be run to install dependencies?",
             name: "installation",
             type: "input",
+            default: "npm install"
         },
         {
             message: "What command should be run to run tests?",
             name: "testing",
             type: "input",
+            default: "npm run test"
         },
         {
             message: "What should the user know about using the repo?",
