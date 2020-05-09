@@ -28,8 +28,8 @@ function init() {
             type: "list",
             choices: [
                 "MIT",
-                "Apache License 2.0",
-                "Common Development and Distribution License",
+                "ISC",
+                "GPL",
                 "None",
             ]
         },
@@ -38,6 +38,12 @@ function init() {
             name: "installation",
             type: "input",
             default: "npm install"
+        },
+        {
+            message:"What command should be run to initialize the application?",
+            name: "initialize",
+            type: "input",
+            default: "node index.js"
         },
         {
             message: "What command should be run to run tests?",
