@@ -10,7 +10,7 @@ function init() {
         {
             message: "What is your Github username?",
             name: "username",
-            type:"input",
+            type: "input",
         },
         {
             message: "What is your project's name?",
@@ -31,20 +31,15 @@ function init() {
                 "ISC",
                 "GPL",
                 "None",
-            ]
+            ] 
         },
         {
-            message:"What command should be run to install dependencies?",
+            message: "What command should be run to install dependencies?",
             name: "installation",
             type: "input",
             default: "npm install"
         },
-        {
-            message:"What command should be run to initialize the application?",
-            name: "initialize",
-            type: "input",
-            default: "node index.js"
-        },
+
         {
             message: "What command should be run to run tests?",
             name: "testing",
@@ -55,22 +50,24 @@ function init() {
             message: "What should the user know about using the repo?",
             name: "usage",
             type: "input",
+            default: "For issues, open an issue."
         },
         {
             message: "What should the user know about contributing to the repo?",
             name: "contribution",
             type: "input",
+            default: "Open to collaborations, and/or contributions"
         },
     ])
-}        
+}
 
 init()
-.then(function(answers){
-    const markD = genMd(answers);
-    return(writeFileAsync("README.md", markD))
-}).then(function() {
-    console.log("Successfully wrote to README.md");
-  })
-  .catch(function(err) {
-    console.log(err);
-  });
+    .then(function (answers) {
+        const markD = genMd(answers);
+        return (writeFileAsync("README.md", markD))
+    }).then(function () {
+        console.log("Successfully wrote to README.md");
+    })
+    .catch(function (err) {
+        console.log(err);
+    });
