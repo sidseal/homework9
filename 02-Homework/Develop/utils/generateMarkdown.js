@@ -5,8 +5,7 @@ function generateMarkdown(data) {
  ${LicLink}
  
 # ${data.title}
-This README.md generator is a command line application that will take some inputs from the user and create a README.md file for the repo
-of the user's choice. This app can be initialized on your command line by using the following command:
+This app can be initialized on your command line by using the following command:
 
 \`\`\`node index.js\`\`\`
 

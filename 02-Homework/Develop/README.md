@@ -1,5 +1,5 @@
 
- [![License: ISC](https://img.shields.io/badge/License-ISC-yellow.svg)](https://opensource.org/licenses/ISC)
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
  
 # Command Line README Generator
 This app can be initialized on your command line by using the following command:
@@ -7,7 +7,7 @@ This app can be initialized on your command line by using the following command:
 ```node index.js```
 
 # Description:
-```This README.md generator is a command line application that will take some inputs from the user and create a README.md file for a repository of the user's choice```
+```This app is a command line README generator which will take some input from the user, and create a markdown file for a repository of the user's choice.```
 
 
 # Table of Contents:
@@ -24,7 +24,7 @@ This app can be initialized on your command line by using the following command:
 *[Questions](#questions)
 
 # License:
-This program is licensed under the ISC license.
+This program is licensed under the MIT license.
 
 # Installation:
 To install dependencies, run the following command;
